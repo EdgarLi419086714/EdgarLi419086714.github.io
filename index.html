@@ -88,7 +88,7 @@
 <p>Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。</p>
 <p>Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedObject类或者子类的实例。可以用一个称为托管对象模型的结构（schema）来描述Core Data应用程序的托管对象。托管对象模型包含一些应用程序托管对象（实体）的描述。每一个描述负责指定一个实体的属性，它与其他实体的关系，以及实体名称和实体表示的元数据。</p>
 <p>二 Core Data 架构图</p>
-<p><img src="CoreData/schema.png" alt="schema.png" title="示例图片"></p>
+<p><img src="CoreData/schema.PNG" alt="schema.png" title="示例图片"></p>
 <p>一个基本的Core Data栈主要由四个主要部分组成:</p>
 <p>1 托管对象（managed objects） NSManagedObject<br>2 托管对象上下文 (managed object context) NSManagedObectContext<br>3 持久化储存协调器 (persistent store coordinator) NSPersistenStoreCoordinator<br>4 持久化储存(persistent store) NSpersistenStore</p>
 <p><u>其中NSManagedObject和NSManagedObjectContext的使用是核心</u></p>
