@@ -7,18 +7,18 @@
   
   <title>CoreData学习笔记之基础概念 | Edgar.Li&#39;s Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。 Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedO">
+  <meta name="description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。&amp;lt; !–more–&amp;gt;Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CoreData学习笔记之基础概念">
 <meta property="og:url" content="http://yoursite.com/2019/02/03/Struct/index.html">
 <meta property="og:site_name" content="Edgar.Li&#39;s Blogs">
-<meta property="og:description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。 Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedO">
+<meta property="og:description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。&amp;lt; !–more–&amp;gt;Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="evernotecid://ECE8F9EA-A945-4631-9C69-2EFA5BC2C431/appyinxiangcom/23460037/ENResource/p1">
-<meta property="og:updated_time" content="2019-02-12T09:10:09.163Z">
+<meta property="og:updated_time" content="2019-02-12T09:48:50.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoreData学习笔记之基础概念">
-<meta name="twitter:description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。 Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedO">
+<meta name="twitter:description" content="Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。&amp;lt; !–more–&amp;gt;Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。">
 <meta name="twitter:image" content="evernotecid://ECE8F9EA-A945-4631-9C69-2EFA5BC2C431/appyinxiangcom/23460037/ENResource/p1">
   
     <link rel="alternate" href="/atom.xml" title="Edgar.Li&#39;s Blogs" type="application/atom+xml">
@@ -88,8 +88,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。</p>
-<p>Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedObject类或者子类的实例。可以用一个称为托管对象模型的结构（schema）来描述Core Data应用程序的托管对象。托管对象模型包含一些应用程序托管对象（实体）的描述。每一个描述负责指定一个实体的属性，它与其他实体的关系，以及实体名称和实体表示的元数据。</p>
+        <p>Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。<br>&lt; !–more–&gt;<br>Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedObject类或者子类的实例。可以用一个称为托管对象模型的结构（schema）来描述Core Data应用程序的托管对象。托管对象模型包含一些应用程序托管对象（实体）的描述。每一个描述负责指定一个实体的属性，它与其他实体的关系，以及实体名称和实体表示的元数据。</p>
 <p>二 Core Data 架构图</p>
 <p><img src="evernotecid://ECE8F9EA-A945-4631-9C69-2EFA5BC2C431/appyinxiangcom/23460037/ENResource/p1" alt="219c7c3f8f074ecd07be0787a7381065.png"></p>
 <p>一个基本的Core Data栈主要由四个主要部分组成:</p>
@@ -103,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/03/Struct/" data-id="cjs1ju69x0000r6w60v1ngetp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/03/Struct/" data-id="cjs1l3w0t0000d1w648b33w43" class="article-share-link">Share</a>
       
       
     </footer>
@@ -111,6 +110,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2019/02/12/CoreData/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          CoreData
+        
+      </div>
+    </a>
   
   
     <a href="/2019/02/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -150,6 +158,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/02/12/CoreData/">CoreData</a>
+          </li>
         
           <li>
             <a href="/2019/02/03/Struct/">CoreData学习笔记之基础概念</a>

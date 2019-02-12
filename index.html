@@ -110,6 +110,52 @@
 
 
   
+    <article id="post-Struct" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/03/Struct/" class="article-date">
+  <time datetime="2019-02-03T03:04:32.000Z" itemprop="datePublished">2019-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/03/Struct/">CoreData学习笔记之基础概念</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Core Data 是一个Cocoa框架，用于管理对象图提供基础实现，以及为多种文件格式的持久化提供了支持。 管理对象包含的工作如撤销，重做，有效性检查以及保证对象关系的完整性。 对象的持久化意味着Core Data可以将模型对象保存到持久存储中，并在需要的时候将他们取出。<br>&lt; !–more–&gt;<br>Core Data 的核心概念是托管对象。托管对象是由Core Data 管理的简单模型对象。但是必须是NSManagedObject类或者子类的实例。可以用一个称为托管对象模型的结构（schema）来描述Core Data应用程序的托管对象。托管对象模型包含一些应用程序托管对象（实体）的描述。每一个描述负责指定一个实体的属性，它与其他实体的关系，以及实体名称和实体表示的元数据。</p>
+<p>二 Core Data 架构图</p>
+<p><img src="evernotecid://ECE8F9EA-A945-4631-9C69-2EFA5BC2C431/appyinxiangcom/23460037/ENResource/p1" alt="219c7c3f8f074ecd07be0787a7381065.png"></p>
+<p>一个基本的Core Data栈主要由四个主要部分组成:</p>
+<p>1 托管对象（managed objects） NSManagedObject<br>2 托管对象上下文 (managed object context) NSManagedObectContext<br>3 持久化储存协调器 (persistent store coordinator) NSPersistenStoreCoordinator<br>4 持久化储存(persistent store) NSpersistenStore</p>
+<p><u>其中NSManagedObject和NSManagedObjectContext的使用是核心</u></p>
+<hr>
+<p>托管对象位于这张图的最上层，是我们的数据模型。需要是NSManagedObject类的子类，这样它才能与Core Data其他的部分进行集成。</p>
+<p>我们的mode(托管对象)对象是被Core Data托管的对象。也就是说，他们存在一个特定的上下文中(NSManagedObectContext)。托管上下文记录了它管理的对象，以及对这些对象的操作(插入，删除和修改)。每个被托管的对象（model）都知道自己属于哪个上下文。Core Data 支持多个上下文，但一般使用一个单独的上下文。</p>
+<p>上下文与持久化存储协调器相连，协调器位于持久化储存和托管对象上下文中。NSPersistentContainer 这个辅助类会帮助我们把它们都设置好。可以这么说，默认情况下 Core Data 会使用一个 SQLite 类型的持久化存储，也就是说你的数据在底层实际上会被存储在一个 SQLite 数据库里。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/03/Struct/" data-id="cjs1l3w0t0000d1w648b33w43" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/02/03/hello-world/" class="article-date">
@@ -187,6 +233,10 @@
         
           <li>
             <a href="/2019/02/12/CoreData/">CoreData</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/03/Struct/">CoreData学习笔记之基础概念</a>
           </li>
         
           <li>
